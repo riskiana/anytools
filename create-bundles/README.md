@@ -28,7 +28,9 @@ The script is located at `create-bundles/create_bundle_file.sh`. It performs the
 chmod +x create_bundle_file.sh
 4. Run the script:
 ./create_bundle_file.sh
+
 Output
+
 - The script creates a bundles directory in the current working directory.
 - Inside bundles, subdirectories are created for each directory in REPO_DIRS.
 - Each Git repository is bundled into a .bundle file and saved in the corresponding subdirectory.
@@ -46,10 +48,12 @@ bundles/
 ...
 
 Notes
+
 If a directory in REPO_DIRS does not exist, the script will skip it and display a warning.
 If a repository fails to bundle, the script will display an error message and remove any partially created bundle file.
 The script outputs the size of each successfully created bundle.
 
 Customization
+
 You can modify the REPO_DIRS array in the script to include or exclude directories as needed:
 REPO_DIRS=("core" "apps" "datawarehouse" "operations" "runtime" "service" "test")
