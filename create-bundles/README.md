@@ -24,11 +24,14 @@ The script is located at `create-bundles/create_bundle_file.sh`. It performs the
 2. Navigate to the `create-bundles` directory:
    ```bash
    cd create-bundles
-3. make the script executable
+3. make the script executable:
+```bash
 chmod +x create_bundle_file.sh
+```
 4. Run the script:
+```bash
 ./create_bundle_file.sh
-
+```
 Output
 
 - The script creates a bundles directory in the current working directory.
@@ -37,7 +40,7 @@ Output
 
 Example Directory Structure
 After running the script, the bundles directory might look like this:
-
+```bash
 bundles/
 ├── core/
 │   ├── repo1.bundle
@@ -46,14 +49,17 @@ bundles/
 │   ├── repo3.bundle
 │   └── repo4.bundle
 ...
+```
 
-Notes
+### Notes
 
 If a directory in REPO_DIRS does not exist, the script will skip it and display a warning.
 If a repository fails to bundle, the script will display an error message and remove any partially created bundle file.
 The script outputs the size of each successfully created bundle.
 
-Customization
+### Customization
 
 You can modify the REPO_DIRS array in the script to include or exclude directories as needed:
+```bash
 REPO_DIRS=("core" "apps" "datawarehouse" "operations" "runtime" "service" "test")
+```
