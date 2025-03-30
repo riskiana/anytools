@@ -21,7 +21,7 @@ The script is located at `git/create_bundle_file.sh`. It performs the following 
 ### Steps to Run
 
 1. Clone this repository or copy the script to your desired location.
-2. Navigate to the `create-bundles` directory:
+2. Navigate to the `git` directory:
    ```bash
    cd create-bundles
 3. make the script executable:
