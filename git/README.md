@@ -4,7 +4,7 @@ This script automates the creation of Git bundle files for multiple repositories
 
 ## Script Overview
 
-The script is located at `create-bundles/create_bundle_file.sh`. It performs the following tasks:
+The script is located at `git/create_bundle_file.sh`. It performs the following tasks:
 
 1. Creates a `bundles` directory to store the generated bundle files.
 2. Iterates through a predefined list of directories (`REPO_DIRS`).
